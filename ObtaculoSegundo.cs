@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CocheObstaculo : MonoBehaviour {
+public class ObtaculoSegundo : MonoBehaviour {
 
     public GameObject cronometroGo;
     public Cronometro cronometroScript;
@@ -21,12 +21,12 @@ public class CocheObstaculo : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other) //Colsion
     {
-        if(other.GetComponent<Coche>()!=null) // Compracion de componentes
+        if (other.GetComponent<Coche>() != null) // Compracion de componentes
         {
             audioFXDcript.FxSonidoChoque();
-            cronometroScript.tiempo = cronometroScript.tiempo - 15;
+            cronometroScript.tiempo = cronometroScript.tiempo - 30;
             Destroy(this.gameObject); // Destruye el pajaro
-            
+
         }
     }
 }

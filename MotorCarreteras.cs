@@ -66,7 +66,9 @@ public class MotorCarreteras : MonoBehaviour {
 
     void VelocidadMotorCarretera()
     {
-        velocidad = 9; // Unidades por segundo.
+        velocidad = 6;
+        // Unidades por segundo.
+        
     }
 
     void BuscoCalles()

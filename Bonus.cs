@@ -24,7 +24,7 @@ public class Bonus : MonoBehaviour {
         if (other.GetComponent<Coche>() != null) // Compracion de componentes
         {
             audioFXDcript.FxSonidoChoque();
-            cronometroScript.tiempo = cronometroScript.tiempo + 20;
+            cronometroScript.tiempo = cronometroScript.tiempo + 10;
             Destroy(this.gameObject); // Destruye el autobs
         }
     }
